@@ -1,0 +1,17 @@
+Multiple Commands exits in Linux System Some simple Builtin commands that my Shell implements.
+
+cd -> changes directory ex. cd directory
+quit -> quits my program
+help -> print helping manual
+echo -> prints the output on the system
+dir -> prints out all the files in the directory
+clr -> which clears the screen
+
+
+Also my shell can handles pips which connects two process togtheres to get the output for example ls | more
+
+
+IO redirection in when it can add or create to the files like echo helloworld > temp. creates a temp file which has hello world in it
+and <  echo < temp reads from the file.
+
+My shell can also implement any linux commands like ls which is just like dir. so it can support both dir and ls and have the same result from it.

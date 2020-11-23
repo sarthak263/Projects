@@ -1,0 +1,6 @@
+To Run the Code:
+sh run.sh print <boardName> if no boardName given it will use the default Board.
+sh run.sh next <boardName> prints all the scenarios of the board if no board given prints the default board
+sh run.sh done <boardName> will print True or False if the car near the end of the open space on the right
+
+The main.py will run and imports the class Cars.py

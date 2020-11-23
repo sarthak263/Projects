@@ -1,0 +1,23 @@
+This is uses Sockets where it communicates with multiple clients using threads and conditional variables.
+I have created Multiple client networked spell checker which does a simple spell check from different clients and writes it to the log file.
+It uses synchronization so there is no race condition occurring  in my project. I have created three threads. 
+so once there are three clients connected to my sever. It will not allow any more clients to be connected. 
+for example if we do create a fourth client and the user does type in some words the client will not be connected to the server 
+until the one of the client has disconnected. 
+There are two thread function which runs forever because the server shouldn't quit until the user enters ^c. 
+To end the client the user can enter ^ or just simply close the client. 
+
+To run the Program:
+Server Side
+1. open a Terminal and enter "make"
+2. ./network PORTNO(Optional, Default 9000)  NAMEOFDICTIONARY(Optional, default "dictionary.txt")
+
+Client Side
+1. open another Terminal
+2. enter telnet localhost PORTNO(same as the server PORTNO)
+3. Enter your input
+
+
+
+
+

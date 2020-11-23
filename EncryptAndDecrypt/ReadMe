@@ -1,0 +1,5 @@
+Asks the User to three choices. 
+Encrypt, Decrypt or Exit
+Encrypt creates random key and cypher key using the clear.txt file
+Decrypt uses those random Key and cypher key to get the original message back.
+exit just exit the program

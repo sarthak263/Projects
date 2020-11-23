@@ -1,0 +1,17 @@
+Number converter
+
+    Menu
+    Convert between integer, binary, octal and hexadecimal
+
+    This program should accept numeric values in hexadecimal,
+    decimal, octal and binary formats as:
+
+        Hex 0x0 to 0xFFFFFFFF
+        Dec 0 to 4294967295
+        Oct o0 to o37777777777
+        Bin b0 to b11111111111111111111111111111111
+
+    After a value is input the code in main will interpret the
+    data types above an process the conversion to an unsigned
+    int.  The unsigned int will be used to convert the input to
+    strings containing hexadecimal, octal and binary strings.

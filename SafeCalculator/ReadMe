@@ -1,0 +1,22 @@
+Safe Calculator that does all the calculations using only bitwise operators.
+Safe integer calculator - warns if an overflow or underflow error occurs
+Simply run the program.
+
+Looks like
+
+Safe Integer Calculator
++ x to add
+- x to subtract
+* x to multiply
+/ x to divide
+% x to modulus
+~ x to negate
+^ x to raise by power x
+c x to clear result
+q x to quit
+
+res = 0 >
+
+
+res = 0 > (operators) (NUMBER)
+and to quit simply type q.

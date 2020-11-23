@@ -1,0 +1,13 @@
+body {
+    background-image: url("backGrounExer.jpg");
+
+}
+
+#Center {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    font-style: normal;
+    font-family: "Microsoft Himalaya", "Arial Rounded MT Bold", sans-serif;
+}
