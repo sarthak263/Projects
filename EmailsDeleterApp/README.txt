@@ -1,6 +1,7 @@
 EMAIL DELETER APP VERSION 1.0.1
 
-First Please make sure you have enable IMAP before running this program. Enable IMAP from your email address settings.
+First Please make sure you have enable IMAP before running this program. Enable IMAP from your email address settings. Also, turn on less secure app in email accounts. 
+You can find these in settings.
 
 The User will enter the email address and password.
 The app will print out of list of locations and enter the exact location of where you want to delete the emails.
