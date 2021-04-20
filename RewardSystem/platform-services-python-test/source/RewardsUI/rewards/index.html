@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <title></title></head>
+<body>
+    <h1>Welcome to the Rewards Dashboard</h1>
+    <div>
+        <h2>Reward Tiers</h2>
+        <table border="1">
+            <tr>
+                <th>Rewards Tier<th>
+                <th>Reward Points</th>
+                <th>Rewards Tier Name</th>
+            </tr>
+            {% for reward in rewards_data %}
+                <tr>
+                    <td>{{ reward.tier }}<td>
+                    <td>{{ reward.points }}</td>
+                    <td>{{ reward.rewardName }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <hr>
+    </div>
+    <div>
+        <h2>Add orders</h2>
+        <form method = "POST">
+
+            {% csrf_token %}
+
+            <label>Enter email address: </label>
+            <label for="orderEmail"></label><input name = "orderEmail" id = "orderEmail" type = "email"/><br>
+            <label>Enter order total: </label>
+            <label for="points"></label><input name = "points" id = "points" type="number"/>
+            <input type="submit" value="Submit Order"/>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h2>User Rewards</h2>
+        <form method ="GET">
+            <label>Email address: </label>
+            <label for="email"></label><input name = "email" id = "email" type="text"/>
+            <input type="submit" value="Search"/>
+        </form>
+
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Email Address</th>
+                <th>Reward Points</th>
+                <th>Reward Tier</th>
+                <th>Reward Tier Name</th>
+                <th>Next Reward Tier</th>
+                <th>Next Reward Tier Name</th>
+                <th>Next Reward Tier Progress</th>
+            </tr>
+            </thead>
+            <tbody>
+              {% if single_customers_data %}
+                {% for c in single_customers_data %}
+                  <tr>
+                      <td>{{c.email}}</td>
+                      <td>{{c.points}}</td>
+                      <td>{{c.rewardsTier}}</td>
+                      <td>{{c.rewardName}}</td>
+                      <td>{{c.nextTier}}</td>
+                      <td>{{c.nextRewardName}}</td>
+                      <td>{{c.nextTierProgress}}</td>
+                  </tr>
+                {% endfor %}
+
+              {% else %}
+                {{customer_error}}
+              {% endif %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
